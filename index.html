@@ -18,6 +18,22 @@
   object-fit: cover;
   border-radius: 12px;
 }
+/* Photo sizing + alignment */
+#photos .grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+#photos .grid img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+@media (max-width: 800px){
+  #photos .grid{ grid-template-columns: 1fr; }
+}
 
   <style>
     body {
@@ -123,9 +139,12 @@
       <div class="card">
         <h3>Creative Art</h3>
         <p>Hands-on art projects that encourage self-expression, focus, and confidence.</p>
-      </div>
-      <div class="card">
-        <h3>Movement & Games</h3>
+      <img src="art.jpg" alt="Kids doing art activities">
+<img src="breath.jpg.png" alt="Kids practicing mindfulness breathing">
+<img src="game.jpg" alt="Kids playing group games">
+
+     
+        
         <p>Yoga, stretching, and cooperative group games that build teamwork and healthy movement.</p>
       </div>
     </div>
